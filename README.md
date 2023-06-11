@@ -9,7 +9,7 @@
 - Add notes to tasks
 - View task details
 
-### Installation
+### Build the project from source
 
 #### Clone the repository 
 ```
