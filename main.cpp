@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
     service = new Service();
 
     CLI::App app{"A simple CLI based todo app "};
-    CLI::App *add_todo_command = app.add_subcommand("add", "Task commands");
+    CLI::App *add_todo_command = app.add_subcommand("add", "Add new task");
 
     std::string new_title;
     add_todo_command->add_option("-t,--title", new_title, "New title")->required();
