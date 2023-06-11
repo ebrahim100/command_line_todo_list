@@ -75,7 +75,7 @@ int main(int argc, char **argv) {
         }
     });
 
-    auto list = app.add_subcommand("list", "List tasks");
+    auto list = app.add_subcommand("list", "List all tasks");
     Status process_status = Status::ALL;
     int limit = 5;
     list->add_option("-l,--limit", limit, "Limit of tasks");
