@@ -18,6 +18,7 @@ private:
 public:
     Service() {
         repository = new Repository();
+        repository->create_table();
     }
 
     void add_todo(std::string &title);

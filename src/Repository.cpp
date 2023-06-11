@@ -19,8 +19,6 @@ void Repository::create_table() {
     if (rc != SQLITE_OK) {
         std::cerr << "SQL error: " << err_msg << std::endl;
         sqlite3_free(err_msg);
-    } else {
-        std::cout << "Table created successfully" << std::endl;
     }
 
     sql = "CREATE TABLE IF NOT EXISTS notes(id INTEGER PRIMARY KEY AUTOINCREMENT, todo_id INTEGER, note TEXT, mode TEXT ,date TEXT, FOREIGN KEY(todo_id) REFERENCES todos(id) ON DELETE CASCADE)";
@@ -28,8 +26,6 @@ void Repository::create_table() {
     if (rc != SQLITE_OK) {
         std::cerr << "SQL error: " << err_msg << std::endl;
         sqlite3_free(err_msg);
-    } else {
-        std::cout << "Table created successfully" << std::endl;
     }
 
     sqlite3_close(db);

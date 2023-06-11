@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.20)
 project(todo)
 set(CXX_STANDARD 17)
 add_subdirectory(src)
