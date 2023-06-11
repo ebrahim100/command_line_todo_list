@@ -34,4 +34,24 @@ cmake ../
 make
 ```
 
+#### Run app with command line options
+```
+./todo --help
 
+A simple CLI based todo app 
+Usage: ./todo [OPTIONS] [SUBCOMMAND]
+
+Options:
+  -h,--help                   Print this help message and exit
+
+Subcommands:
+  add                         Add new task
+  edit                        Set title of a task
+  note                        Add a note to a task
+  status                      Set status of a task
+  notes                       Get notes of a task
+  list                        List tasks
+```
+
+## License
+This project is licensed under the MIT License.
